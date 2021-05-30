@@ -23,7 +23,7 @@
                 </a>
                 <ul class="navigation-list list">
                     <li class="navigation-list-item">
-                        <a class="navigation-list-link link" href="./index.html">Студия</a>
+                        <a class="navigation-list-link link current" href="./index.html">Студия</a>
                     </li>
                     <li class="navigation-list-item">
                         <a class="navigation-list-link link" href="./portfolio.html">Портфолио</a>
@@ -58,7 +58,7 @@
         <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="modal-btn" type="button">Заказать услугу</button>
+                <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!--Features-->
@@ -130,14 +130,23 @@
                     <li class="what-we-do-list-item">
                         <img class="what-we-do-list-link" src="./images/whatwedo/image-1.png" alt="Человек набирает код" width="370"
                             height="294">
+                        <p class="what-we-do-list-description">
+                            Десктопные приложения
+                        </p>
                     </li>
                     <li class="what-we-do-list-item">
                         <img class="what-we-do-list-link" src="./images/whatwedo/image-2.png"
                             alt="Человек разрабатывает мобильный дизайн сайта" width="370" height="294">
+                        <p class="what-we-do-list-description">
+                            Мобильные приложения
+                        </p>
                     </li>
                     <li class="what-we-do-list-item">
                         <img class="what-we-do-list-link" src="./images/whatwedo/image-3.png"
                             alt="Человек занимается графическим дизайном" width="370" height="294">
+                        <p class="what-we-do-list-description">
+                            Дизайнерские решения
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -416,6 +425,17 @@
             </div>
         </div>
     </footer>
+    <!-- modal window-->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-window">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-window-btn">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
 
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
