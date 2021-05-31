@@ -619,6 +619,10 @@ body {
   overflow: auto;
   transform: translateY(100%);
   transition: transform 250ms linear;
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-bottom: 63px;
+  padding-right: 24px;
 }
 
 .portfolio-img-wrapper {
